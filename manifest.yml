@@ -18,7 +18,7 @@ declared-services:
     label: rediscloud
     plan:  30mb
 applications:
-- name: bluechatter
+- name: mybluechatter-ar-1
   memory: 128M
   command: node app.js
   services:

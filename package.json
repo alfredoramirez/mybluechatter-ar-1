@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "install": "node admin.js track",
-    "start": "node app.js"
+    "start": "node --max-old-space-size=600 app.js"
   },
   "dependencies": {
     "cfenv": "^1.0.0",
@@ -11,7 +11,8 @@
     "express": "3.4.8",
     "http-post": "^0.1.1",
     "nconf": "^0.7.2",
-    "redis": "*"
+    "redis": "*",
+    "bluemix-autoscaling-agent": "*"
   },
   "repository": {
     "type": "git",

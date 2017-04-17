@@ -16,6 +16,7 @@
 
 var express = require("express");
 var fs = require('fs');
+var as_agent = require('bluemix-autoscaling-agent');
 var http = require('http');
 var path = require('path');
 var cfenv = require("cfenv");
